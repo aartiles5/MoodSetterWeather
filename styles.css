@@ -1,0 +1,138 @@
+body {
+  background: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+}
+h1 {
+  font-family: "Ranchers";
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: left;
+  margin-left: 50px;
+  font-size: 20px;
+  color: rgba(197, 5, 5, 0.603);
+}
+
+.displayResults {
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.locationButton {
+  display: block;
+  margin: auto;
+  background: rgb(178, 203, 248);
+  font-family: "Raleway", sans-serif;
+  color: rgba(7, 0, 0, 0.603);
+  border-width: 4px;
+  border-color: black;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.citySearch {
+  margin-left: 30px;
+  margin-top: 35px;
+  padding: 20px;
+}
+
+.searchBar {
+  border-color: cornflowerblue;
+  border-width: 4px;
+  border-radius: 6px;
+  padding: 8px 70px;
+}
+
+.moodIllu {
+  position: absolute;
+  right: 0;
+  top: 1px;
+  width: 300px;
+}
+
+.mainCityBlock {
+  display: block;
+  width: 30%;
+  margin: auto;
+  margin-top: 200px;
+  padding: 20px;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  border-radius: 6px;
+}
+
+.cityTitle {
+  font-family: "Ranchers";
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  font-size: 28px;
+}
+
+p {
+  text-align: center;
+}
+.high {
+  font-size: 20px;
+  font-style: bold;
+  color: rgba(197, 5, 5, 0.603);
+}
+
+.low {
+  font-size: 20px;
+  color: rgb(14, 4, 161);
+}
+
+.fahr {
+  font-size: 14px;
+}
+.icon {
+  font-size: 40px;
+  color: cornflowerblue;
+}
+.conditions {
+  text-align: right;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.row {
+  margin-top: 60px;
+}
+.card {
+  display: block;
+  margin: auto;
+  width: 99%;
+  padding: 3px;
+  padding-bottom: 10px;
+  background: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+}
+
+.card:hover {
+  border-style: dashed;
+  border-color: rgb(66, 66, 66);
+  border-width: 4px;
+}
+
+.ideas {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
