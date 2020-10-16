@@ -138,5 +138,6 @@ p {
 }
 
 .repositoryLink {
-  text-align: center;
+  display: block;
+  margin: auto;
 }
