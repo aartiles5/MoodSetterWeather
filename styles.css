@@ -131,13 +131,8 @@ p {
   border-width: 4px;
 }
 
-.ideas {
+.ideas .repositoryLink {
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-}
-
-.repositoryLink {
-  display: block;
-  margin: auto;
 }
