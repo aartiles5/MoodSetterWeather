@@ -59,7 +59,7 @@ function search(event) {
 
   let searchBar = document.querySelector("#searchBar");
   let city = document.querySelector("#searchingFor");
-  city.innerHTML = `🧐 Searching for ${searchBar.value} 🧐`;
+  city.innerHTML = `Searching for ${searchBar.value} 🧐`;
   let apiUrl = `${apiEndpoint}q=${searchBar.value}&appid=${apiKey}&units=imperial`;
 
   axios.get(apiUrl).then(showTemperature);
