@@ -23,9 +23,8 @@ h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-style: normal;
-  text-align: left;
-  margin-left: 50px;
-  font-size: 14px;
+  text-align: center;
+  font-size: 8px;
   color: rgba(197, 5, 5, 0.603);
 }
 
@@ -42,8 +41,8 @@ h3 {
 
 h4 {
   font-family: "Ranchers";
-  font-weight: 300;
-  font-size: 26px;
+  font-weight: 400;
+  font-size: 33px;
   font-style: normal;
   text-align: center;
 }
