@@ -40,6 +40,15 @@ h3 {
   margin-left: 50px;
 }
 
+h4 {
+  font-family: "Ranchers";
+  font-weight: 300;
+  font-size: 22px;
+  font-style: normal;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
 .locationButton {
   display: block;
   margin: auto;
