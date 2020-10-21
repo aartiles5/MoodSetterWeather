@@ -66,7 +66,7 @@ function search(event) {
 }
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
-  let .displayResults = document.querySelector(".displayResults");
+  let displayResult = document.querySelector(".displayResults");
   .displayResults.innerHTML = `It is currently ${temperature}ºF in ${response.data.name}`;
 }
 
