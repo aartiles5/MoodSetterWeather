@@ -62,6 +62,8 @@ function search(event) {
   city.innerHTML = `Searching for ${searchBar.value} 🧐`;
   let apiUrl = `${apiEndpoint}q=${searchBar.value}&appid=${apiKey}&units=imperial`;
 
+  console.log(response.data);
+
   axios.get(apiUrl).then(showTemperature);
 }
 function showTemperature(response) {
@@ -72,3 +74,5 @@ function showTemperature(response) {
 
 let searchBar = document.querySelector("#search-form");
 searchBar.addEventListener("submit", search);
+
+
