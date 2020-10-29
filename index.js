@@ -59,7 +59,7 @@ function search(event) {
   let searchBar = document.querySelector("#searchBar");
   let city = document.querySelector("#searchingFor");
   city.innerHTML = `Searching for ${searchBar.value} 🧐`;
-  iconElement.setAttribute = ("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
+  iconElement.setAttribute = ("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 function showTemperature(response) {
   console.log(response.data);
