@@ -54,17 +54,12 @@ h2.innerHTML = `${day} ${month} ${date}, ${year} ${hours}:${minutes}`;
 
 function search(event) {
   event.preventDefault();
-  let apiKey = "cd7a598858343df0ff67d92a369e973c";
-  let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather?";
-
+  
+  let iconElement = document.querySelector("#icon");
   let searchBar = document.querySelector("#searchBar");
   let city = document.querySelector("#searchingFor");
   city.innerHTML = `Searching for ${searchBar.value} 🧐`;
-  let apiUrl = `${apiEndpoint}q=${searchBar.value}&appid=${apiKey}&units=imperial`;
-
-  
-
-  axios.get(apiUrl).then(showTemperature);
+  iconElement.setAttribute = ("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
 }
 function showTemperature(response) {
   console.log(response.data);
@@ -76,4 +71,8 @@ function showTemperature(response) {
 let searchBar = document.querySelector("#search-form");
 searchBar.addEventListener("submit", search);
 
+  let apiKey = "cd7a598858343df0ff67d92a369e973c";
+  let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather?";
+  let apiUrl = `${apiEndpoint}q=${searchBar.value}&appid=${apiKey}&units=imperial`;
 
+axios.get(apiUrl).then(showTemperature);
