@@ -62,11 +62,12 @@ function search(event) {
   city.innerHTML = `Searching for ${searchBar.value} 🧐`;
   let apiUrl = `${apiEndpoint}q=${searchBar.value}&appid=${apiKey}&units=imperial`;
 
-  console.log(response.data);
+  
 
   axios.get(apiUrl).then(showTemperature);
 }
 function showTemperature(response) {
+  console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
   let h4 = document.querySelector("h4");
   h4.innerHTML = ` It is currently ${temperature}ºF in ${response.data.name}`;
