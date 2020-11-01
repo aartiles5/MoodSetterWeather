@@ -64,8 +64,8 @@ function search(event) {
 function showTemperature(response) {
   console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
-  let h5 = document.querySelector("h5");
-  h5.innerHTML = ` It is currently ${temperature}ºF in ${response.data.name}`;
+  let displayResults = document.querySelector("#displayResults");
+  displayResults.innerHTML = ` It is currently ${temperature}ºF in ${response.data.name}`;
 }
 
 let searchBar = document.querySelector("#search-form");
@@ -73,6 +73,6 @@ searchBar.addEventListener("submit", search);
 
   let apiKey = "cd7a598858343df0ff67d92a369e973c";
   let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather?";
-  let apiUrl = `${apiEndpoint}q=${searchBar.value}&appid=${apiKey}&units=imperial`;
+  let apiUrl = `${apiEndpoint}q=${searchBar.value}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(showTemperature);
