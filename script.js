@@ -52,6 +52,10 @@ let month = months[now.getMonth()];
 
 h2.innerHTML = `${day} ${month} ${date}, ${year} ${hours}:${minutes}`;
 
+ let apiKey = "cd7a598858343df0ff67d92a369e973c";
+  let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather?";
+  let apiUrl = `${apiEndpoint}q=${searchBar.value}&appid=${apiKey}&units=metric`;
+
 function search(event) {
   event.preventDefault();
   
@@ -71,8 +75,6 @@ function showTemperature(response) {
 let searchBar = document.querySelector("#search-form");
 searchBar.addEventListener("submit", search);
 
-  let apiKey = "cd7a598858343df0ff67d92a369e973c";
-  let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather?";
-  let apiUrl = `${apiEndpoint}q=${searchBar.value}&appid=${apiKey}&units=metric`;
+ 
 
 axios.get(apiUrl).then(showTemperature);
