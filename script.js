@@ -64,8 +64,8 @@ function search(event) {
 function showTemperature(response) {
   console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
-  let h4 = document.querySelector("h4");
-  h4.innerHTML = ` It is currently ${temperature}ºF in ${response.data.name}`;
+  let h5 = document.querySelector("h5");
+  h5.innerHTML = ` It is currently ${temperature}ºF in ${response.data.name}`;
 }
 
 let searchBar = document.querySelector("#search-form");
