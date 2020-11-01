@@ -76,3 +76,8 @@ searchBar.addEventListener("submit", search);
   let apiUrl = `${apiEndpoint}q=${searchBar.value}&appid=${apiKey}&units=imperial`;
 
 axios.get(apiUrl).then(showTemperature);
+
+
+Users/annie/Documents/GitHub/MoodSetterWeather/index.js
+
+index.js
